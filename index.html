@@ -1,0 +1,138 @@
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>John Doe's Blog</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+        <style>
+            /* 自定义滚动条样式 */
+            ::-webkit-scrollbar {
+                width: 8px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #f0f0f0;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #666;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+        <div class="flex flex-col min-h-screen">
+            <!-- 导航栏 -->
+            <nav class="fixed w-full bg-white shadow-md z-10 md:static md:w-64 md:fixed md:h-full md:bg-gray-50 md:shadow-none">
+                <div class="px-4 py-6 md:px-6">
+                    <!-- 汉堡菜单（移动端显示） -->
+                    <div class="flex items-center justify-between md:hidden">
+                        <a href="#home" class="text-xl font-bold text-gray-800">John Doe</a>
+                        <button id="menu-toggle" class="hamburger hamburger--spin" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <!-- 导航链接（桌面端显示） -->
+                    <div class="hidden md:block">
+                        <ul class="mt-6">
+                            <li class="mb-2"><a href="#home" class="block px-4 py-2 text-gray-700 rounded hover:bg-gray-200 hover:text-gray-900">首页</a></li>
+                            <li class="mb-2"><a href="#posts" class="block px-4 py-2 text-gray-700 rounded hover:bg-gray-200 hover:text-gray-900">文章</a></li>
+                            <li class="mb-2"><a href="#projects" class="block px-4 py-2 text-gray-700 rounded hover:bg-gray-200 hover:text-gray-900">项目</a></li>
+                            <li class="mb-2"><a href="#about" class="block px-4 py-2 text-gray-700 rounded hover:bg-gray-200 hover:text-gray-900">关于</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 移动端菜单（隐藏，通过JS切换） -->
+                    <div id="mobile-menu" class="hidden md:hidden">（此部分为 HTML 代码，翻译为中文意义不大，通常这类代码在翻译中会保持
+                        <ul class="px-4 py-2">
+                            <li class="mb-2"><a href="#home" class="block px-4 py-2 text-gray-700 rounded hover:bg-gray-200 hover:text-gray-900">首页</a></li>
+                            <li class="mb-2"><a href="#posts" class="block px-4 py-2 text-gray-700 rounded hover:bg-gray-200 hover:text-gray-900">文章</a></li>
+                            <li class="mb-2"><a href="#projects" class="block px-4 py-2 text-gray-700 rounded hover:bg-gray-200 hover:text-gray-900">项目</a></li>
+                            <li class="mb-2"><a href="#about" class="block px-4 py-2 text-gray-700 rounded hover:bg-gray-200 hover:text-gray-900">关于</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>   <
+av>
+
+            <!-- 主内容区域 -->
+            <main class="flex-grow pt-24 md:pt-0 md:pl-64"> 翻译成中文后，由于中文网页结构通常不直接对应这样的英文标签和类名，因此这里仅给出对应的中文注释
+                <section id="home" class="py-12 px-4 md:px-6"> 首页 
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">欢迎来到我的博客</h1>
+                    <p class="text-gray-600">这里记录技术分享、项目经验和生活感悟，希望能对你有所帮助。</p>
+                </section>   < / >节
+
+                <section id="posts" class="py-12 px-4 md:px-6"> 部分内容为样式代码，无实际翻译意义。
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">最新文章</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+                            <h3 class="text-xl font-bold mb-2">技术文章标题</h3>
+                            <p class="text-gray-600">这里是文章的简短描述，展示主要内容和技术点。</p>
+                        </div>
+                        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+                            <h3 class="text-xl font-bold mb-2">项目经验分享</h3>
+                            <p class="text-gray-600">记录项目中的挑战和解决方案，分享最佳实践。</p>
+                        </div>
+                    </div>
+                </section>   < / >节
+
+                <section id="projects" class="py-12 px-4 md:px-6"> 项目 
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">我的项目</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+                            <h3 class="text-xl font-bold mb-2">开源项目名称</h3>
+                            <p class="text-gray-600">项目描述和主要功能，展示技术栈和成果。</p>
+                            <a href="#" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">查看详情</a>查看详情查看详情
+                        </div>
+                        <div class="bg-white p-6 rounded shadow hover:shadow-lg transition-shadow">
+                            <h3 class="text-xl font-bold mb-2">个人项目名称</h3>
+                            <p class="text-gray-600">项目介绍和开发过程，展示创意和实现细节。</p>
+                            <a href="#" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">查看详情</a>查看详情查看详情
+                        </div>
+                    </div>
+                </section>   < / >节
+
+                <section id="about" class="py-12 px-4 md:px-6">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">关于我</h2>
+                    <p class="text-gray-600">我是一名前端开发者，专注于Web开发和用户体验设计，热爱技术分享和开源社区。</p>
+                    <div class="mt-6">
+                        <a href="https://github.com" class="text-gray-600 hover:text-gray-800 mr-4">（此处为链接，指向 GitHub 网站）
+                            <i class="fab fa-github fa-lg"></i> GitHub GitHub
+                        </a>   < / >
+                        <a href="https://twitter.com" class="text-gray-600 hover:text-gray-800 mr-4">（此处为链接，指向 Twitter 官网）
+                            <i class="fab fa-twitter fa-lg"></i> Twitter 推特
+                        </a   一个>
+                        <a href="https://linkedin.com" class="text-gray-600 hover:text-gray-800"> 链接至领英
+                            <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+                        </a>   < / >
+                    </div>
+                </section>   < / >节
+            </main>   主要> < /
+        </div>
+
+        <script>   < >脚本
+            // 移动端菜单切换
+            document.getElementById('menu-toggle').addEventListener('click', function() {document   文档.getElementById('menu-toggle'   “menu-toggle”).addEventListener('click'   “点击”, function   函数() {
+  // 在这里添加您的代码
+
+                var mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('hidden');移动菜单类列表切换“隐藏”；
+            });
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {document   文档.querySelectorAll('a[href^="#"]'   “[href ^ = " # "]”).forEach(anchor   锚 => {  这段代码是 JavaScript 语言的，它使用了 document   文档.querySelectorAll 方法来选择所有以 "#"
+                anchor.addEventListener('click', function (e) {锚点元素.addEventListener('click'   “点击”, function   函数 (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({document   文档.querySelector (this   这.getAttribute (" href "   “Href”)) .scrollIntoView(——
+                        behavior   行为: 'smooth'   行为:“光滑”
+                    });
+                });
+            });
+        </script>   > < /脚本
+    </body>   身体< / >
+    </html>
+    
+
